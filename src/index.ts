@@ -5,9 +5,9 @@ const PORT = process.env.PORT ?? 8000;
 
 app.get("/", (_, res) => res.json({ message: "Hello from Express Server 👋🏻" }));
 
-// app.get("/health", (_, res) =>
-//   res.json({ message: "Everything is healthy 👀" })
-// );
+app.get("/health", (_, res) =>
+  res.json({ message: "Everything is healthy 👀" })
+);
 
 // Start the Express Server
 app.listen(PORT, () =>

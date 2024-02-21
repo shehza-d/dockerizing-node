@@ -1,0 +1,11 @@
+#* compose-dev.yaml
+
+services:
+  app: # Service name for the app
+    build: . # Build context for the Dockerfile
+    container_name: node-app # Container name for the app
+    ports:
+      - 8000:8000 # Port mapping from host to container
+    volumes:
+      - .:/app # Mounting current directory to /app directory in container
+    command: npm run dev # Command to start the app
