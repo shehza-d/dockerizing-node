@@ -1,7 +1,7 @@
 import express from "express";
 
 const app = express();
-const PORT = process.env.PORT ?? 8000;
+const PORT = process.env.PORT ?? 443;
 
 app.get("/", (_, res) => res.json({ message: "Hello from Express Server 👋🏻" }));
 
